@@ -1,0 +1,147 @@
+.categories {
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+
+
+  // временные стили
+  // width: 320px;
+  margin: 0 auto;
+  // @include outline-front(lightgray);
+  // end
+
+  margin-bottom: 26px;
+}
+
+.categories__list {
+  @include list-reset();
+  display: flex;
+  flex-direction: column;
+}
+
+.categories__item {
+  width: 100%;
+  padding: 23px 21px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+
+  background-color: $background-lightgray;
+}
+
+.categories__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.categories__title-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+}
+
+.categories__icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  margin-right: 20px;
+
+
+  background-color: $background-button-green;
+
+  border-radius: 50%;
+}
+
+.categories__icon-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.categories__icon-svg--slim {
+  width: auto;
+  height: 50px;
+  top: calc(50% - 3px);
+}
+
+.categories__icon-svg--pro {
+  width: 68px;
+  height: auto;
+  max-width: none;
+}
+
+.categories__title {
+  @include margin-padding-reset();
+
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $text-black;
+  text-transform: uppercase;
+}
+
+.categories__description {
+  @include margin-padding-reset();
+  margin-bottom: 24px;
+
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $text-darkbrown;
+}
+
+.categories__link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 19px;
+  padding-bottom: 21px;
+
+  text-decoration: none;
+
+  border-top: 1px solid $line-dark-gray;
+
+  opacity: 1;
+  transition: opacity 0.2s linear;
+
+  &:hover,
+  &:focus {
+    outline-color: transparent;
+  }
+
+  &:hover .categories__link-icon,
+  &:focus .categories__link-icon {
+    width: 33px;
+    background-image: url("../img/icon-right-arrow-verylong.svg") no-repeat center;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active .categories__link-icon {
+    width: 33px;
+    background-image: url("../img/icon-right-arrow-verylong.svg") no-repeat center;
+  }
+}
+
+.categories__link-text {
+  margin-right: 10px;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $text-black;
+  text-transform: uppercase;
+}
+
+
+.categories__link-icon {
+  width: 26px;
+  height: 11px;
+  flex-shrink: 0;
+
+  background: url("../img/icon-right-arrow-long.svg") no-repeat center;
+}

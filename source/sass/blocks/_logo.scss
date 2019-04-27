@@ -1,0 +1,14 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+
+  // для разметки
+  // @include outline-front(red);
+}
+
+.logo__name {
+  margin-right: auto;
+  margin-left: auto;
+}

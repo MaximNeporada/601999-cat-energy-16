@@ -1,0 +1,69 @@
+.cat-action {
+  position: relative;
+  // width: 100%;
+  padding: 0 20px;
+  padding-top: 30px;
+
+
+  // временные стили
+  width: 320px;
+  margin: 0 auto;
+  // @include outline-front(green);
+  // end
+
+  margin-bottom: 22px;
+}
+
+.cat-action__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  height: 304px;
+  width: 100%;
+
+  background-color: $action-background-color;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+}
+
+
+.cat-action__title {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 24px;
+
+  font-size: 33px;
+  line-height: 36px;
+  font-weight: 500;
+  color: $text-white;
+  text-align: center;
+}
+
+.cat-action__description {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 27px;
+
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: $text-white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cat-action__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 3px;
+}
+
+.cat-action__link {
+  width: 100%;
+}
