@@ -1,0 +1,23 @@
+.header {
+  // width: 100%;
+  min-height: 66px;
+  display: flex;
+  flex-direction: column;
+
+  // временные стили
+  width: 320px;
+  margin: 0 auto;
+  // @include outline-front(yellow);
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo {
+  min-height: 66px;
+  padding: 0 20px;
+  padding-right: 54px;
+  border-bottom: 1px solid $line-menu-gray;
+}

@@ -1,0 +1,40 @@
+.button {
+  display: block;
+  padding: 10px 24px;
+  padding-top: 12px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $text-white;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: $background-button-green;
+
+  transition: all 0.2s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $background-button-green-light;
+  }
+
+  &:active {
+    color: $text-white-active;
+  }
+}
+
+.button--gray {
+  background-color: $background-lightgray;
+
+  &:hover,
+  &focus {
+    background-color: $background-hover-button-gray;
+  }
+
+  &:active {
+    color: $text-white-active;
+  }
+}

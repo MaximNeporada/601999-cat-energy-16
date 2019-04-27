@@ -1,0 +1,153 @@
+.catalog {
+  // width: 100%;
+  padding-top: 14px;
+
+
+  // временные стили
+  width: 320px;
+  margin: 0 auto;
+  // @include outline-front(lightgray);
+  // end
+
+  margin-bottom: 26px;
+}
+
+.catalog__title {
+  @include margin-padding-reset();
+  margin-bottom: 28px;
+  padding: 0 20px;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: $text-black;
+}
+
+.catalog__list {
+  @include list-reset();
+  display: flex;
+  flex-direction: column;
+
+  border-top: 1px solid $line-catalog-gray;
+}
+
+.catalog__item {
+  padding: 0 20px;
+  padding-bottom: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 1px solid $line-catalog-gray;
+}
+
+.catalog__link {
+  width: 50%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.catalog__image {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.catalog__description {
+  width: 50%;
+}
+
+.catalog__item-title {
+  @include margin-padding-reset();
+  width: 100%;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+
+.catalog__item-link {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $text-black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.catalog__properties {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.catalog__properties td {
+  width: 50%;
+
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $text-darkbrown;
+}
+
+.catalog__properties-name {
+  text-align: left;
+}
+
+.catalog__properties-value {
+  text-align: right;
+}
+
+.catalog__order-link {
+  width: 100%;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog__item--more {
+  padding-top: 26px;
+}
+
+.catalog__link--more {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 23px;
+}
+
+.catalog__icon-plus {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.catalog__item-title--more,
+.catalog__text-more {
+  padding-right: 0;
+  text-align: center;
+}
+
+.catalog__text-more {
+  display: block;
+  width: 100%;
+  margin-bottom: 18px;
+
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $text-darkbrown;
+  text-align: center;
+}
+
+.catalog__button-more {
+  width: 100%;
+}

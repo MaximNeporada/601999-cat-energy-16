@@ -1,0 +1,22 @@
+@mixin list-reset() {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin margin-padding-reset() {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin button-reset() {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+
+// временный
+@mixin outline-front($color) {
+  outline: 2px dashed $color;
+  outline-offset: 2px;
+}
