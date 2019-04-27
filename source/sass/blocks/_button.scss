@@ -25,3 +25,16 @@
     color: $text-white-active;
   }
 }
+
+.button--gray {
+  background-color: $background-lightgray;
+
+  &:hover,
+  &focus {
+    background-color: $background-hover-button-gray;
+  }
+
+  &:active {
+    color: $text-white-active;
+  }
+}
