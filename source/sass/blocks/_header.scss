@@ -21,3 +21,53 @@
   padding-right: 54px;
   border-bottom: 1px solid $line-menu-gray;
 }
+
+
+@media (min-width: $tablet-width) {
+  .header {
+    width: $tablet-width;
+    padding: 0 30px;
+  }
+
+  .header__wrapper {
+    padding: 22px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .header__logo {
+    padding: 0;
+    border-bottom: 0;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    width: 100%;
+    padding: 0;
+  }
+
+  .header__wrapper {
+    position: relative;
+    width: $desktop-width;
+    padding: 0 40px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+  }
+
+  .header--page-main::after {
+    content: "";
+    display: block;
+    height: 696px;
+    width: 50%;
+    background: $background-color-header url("../img/index-background-desktop@1x.jpg") no-repeat right 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+}
