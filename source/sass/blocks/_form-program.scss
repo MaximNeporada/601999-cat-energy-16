@@ -22,8 +22,7 @@
   &--task {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 0 1px $line-catalog-gray,
-      inset 1px 0 0 0 $line-catalog-gray,
+    box-shadow: 0 0 0 1px $line-catalog-gray, inset 1px 0 0 0 $line-catalog-gray,
       -1px 0 0 $line-catalog-gray;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -286,8 +285,8 @@
 
   .form-program__input {
     margin-left: 17px;
-    padding-top: 13px;
-    padding-bottom: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 18px;
 
     font-size: 20px;
@@ -550,7 +549,8 @@
   .form-program__input {
     margin-left: 17px;
     height: auto;
-    padding: 13px 0 14px 17px;
+    padding: 10px 17px;
+    padding-right: 0;
 
     font-size: 20px;
     line-height: 20px;
