@@ -27,14 +27,16 @@
 }
 
 .button--gray {
+  color: $text-darkbrown;
   background-color: $background-lightgray;
 
   &:hover,
-  &focus {
+  &:focus {
     background-color: $background-hover-button-gray;
   }
 
   &:active {
-    color: $text-white-active;
+    background-color: $background-lightgray;
+    color: $text-darkbrown-active;
   }
 }

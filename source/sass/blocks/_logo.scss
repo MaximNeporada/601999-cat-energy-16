@@ -3,12 +3,52 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-
-  // для разметки
-  // @include outline-front(red);
 }
 
 .logo__name {
   margin-right: auto;
   margin-left: auto;
+}
+
+.logo__image {
+  display: block;
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    width: 173px;
+    height: auto;
+  }
+
+  .logo__image {
+    display: none;
+
+    &--tablet {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    width: 202px;
+    height: auto;
+  }
+
+  .logo__image {
+    display: none;
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
 }
