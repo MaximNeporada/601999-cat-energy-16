@@ -22,7 +22,8 @@
   &--task {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 0 1px $line-catalog-gray, inset 1px 0 0 0 $line-catalog-gray,
+    box-shadow: 0 0 0 1px $line-catalog-gray,
+      inset 1px 0 0 0 $line-catalog-gray,
       -1px 0 0 $line-catalog-gray;
     padding-top: 20px;
     padding-bottom: 10px;
