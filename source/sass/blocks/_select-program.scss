@@ -1,0 +1,56 @@
+.select-program__title {
+  width: 320px;
+  padding: 0 20px;
+  margin: 24px auto 33px;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: $text-black;
+}
+
+.select-program__text {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 40px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .select-program__title {
+    width: 768px;
+    padding: 0 30px;
+    margin: 43px auto;
+    margin-bottom: 52px;
+
+    font-size: 60px;
+  }
+
+  .select-program__text {
+    width: 768px;
+    margin: auto;
+    padding: 0 370px;
+    padding-left: 70px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .select-program__title {
+    width: $desktop-width;
+    padding: 0 40px;
+    margin-top: 16px;
+  }
+
+  .select-program__text {
+    width: $desktop-width;
+    padding: 0 900px;
+    padding-left: 40px;
+  }
+}
