@@ -1,7 +1,7 @@
 .select-program__title {
   width: 320px;
   padding: 0 20px;
-  margin: 24px auto 33px;
+  margin: 24px auto 25px;
 
   font-size: 36px;
   line-height: 60px;
@@ -24,8 +24,8 @@
   .select-program__title {
     width: 768px;
     padding: 0 30px;
-    margin: 43px auto;
-    margin-bottom: 52px;
+    margin: 31px auto;
+    margin-bottom: 55px;
 
     font-size: 60px;
   }
@@ -45,7 +45,8 @@
   .select-program__title {
     width: $desktop-width;
     padding: 0 40px;
-    margin-top: 16px;
+    margin-top: 48px;
+    margin-bottom: 55px;
   }
 
   .select-program__text {

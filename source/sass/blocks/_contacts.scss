@@ -1,5 +1,5 @@
 .contacts {
-  background-color: $background-white;
+  background-color: $background-lightgray;
   width: 100%;
 }
 
@@ -10,7 +10,7 @@
   padding: 29px 20px;
   padding-bottom: 26px;
   margin: auto;
-  width: 100%;
+  width: 320px;
 }
 
 .contacts__label {
@@ -39,6 +39,11 @@
   height: 362px;
   position: relative;
   background: #fdf7f0 url("../img/bg-map-mobile@1x.png") 0 -38px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: contain;
+  }
 }
 
 .contacts__pin {
@@ -61,6 +66,7 @@
     padding: 65px 72px;
     padding-bottom: 56px;
     margin: 0;
+    width: 100%;
   }
 
   .contacts__label {
@@ -83,6 +89,11 @@
   .contacts__map {
     height: 396px;
     background: url("../img/bg-map-tablet@1x.png") 0 -4px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+      background-size: contain;
+    }
   }
 
   .contacts__pin {
@@ -98,8 +109,7 @@
 @media (min-width: $desktop-width) {
   .contacts {
     position: relative;
-    width: $desktop-width;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .contacts__wrapper-text {
@@ -121,6 +131,11 @@
   .contacts__map {
     height: 400px;
     background: url("../img/bg-map-desktop@1x.png") 0 0;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+      background-size: contain;
+    }
   }
 
   .contacts__pin {

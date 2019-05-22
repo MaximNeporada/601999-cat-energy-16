@@ -135,13 +135,13 @@
     padding: 13px 0;
   }
 
-  .main-nav__link {
-    letter-spacing: 1px;
-  }
-
   .main-nav__list--page-main .main-nav__link {
     font-size: 20px;
     color: $text-white;
+  }
+
+  .main-nav__link {
+    letter-spacing: 1px;
   }
 
   .main-nav__list--page-main .main-nav__link--active::after {

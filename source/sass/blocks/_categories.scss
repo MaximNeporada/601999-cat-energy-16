@@ -3,7 +3,6 @@
   // width: 100%;
   padding: 0 20px;
 
-
   // временные стили
   width: 320px;
   margin: 0 auto;
@@ -49,7 +48,6 @@
   min-width: 50px;
   margin-right: 20px;
   margin-bottom: 21px;
-
 
   background-color: $background-button-green;
 
@@ -120,7 +118,8 @@
   &:hover .categories__link-icon,
   &:focus .categories__link-icon {
     width: 33px;
-    background-image: url("../img/icon-right-arrow-verylong.svg") no-repeat center;
+    background-image: url("../img/icon-right-arrow-verylong.svg") no-repeat
+      center;
   }
 
   &:active {
@@ -129,7 +128,8 @@
 
   &:active .categories__link-icon {
     width: 33px;
-    background-image: url("../img/icon-right-arrow-verylong.svg") no-repeat center;
+    background-image: url("../img/icon-right-arrow-verylong.svg") no-repeat
+      center;
   }
 }
 
@@ -142,7 +142,6 @@
   color: $text-black;
   text-transform: uppercase;
 }
-
 
 .categories__link-icon {
   width: 26px;
@@ -244,7 +243,7 @@
     width: calc(50% - 80px);
     margin: 0 40px;
     margin-top: 40px;
-    padding: 49px 51px;
+    padding: 46px 51px;
     padding-bottom: 63px;
     position: relative;
   }
@@ -280,6 +279,6 @@
 
   .categories__description {
     margin-bottom: 32px;
-    margin-top: 38px;
+    margin-top: 41px;
   }
 }

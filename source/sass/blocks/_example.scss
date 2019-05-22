@@ -145,7 +145,6 @@
   width: 100%;
 }
 
-
 @media (min-width: $tablet-width) {
   .example {
     position: relative;
@@ -235,7 +234,6 @@
     transform: translate(-50%, 45%);
   }
 
-
   .example__price {
     margin-top: -10px;
     width: calc(100% - 498px);
@@ -319,7 +317,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    padding-bottom: 40px;
+    padding-bottom: 70px;
   }
 
   .example::after {
@@ -335,7 +333,7 @@
 
   .example__title {
     width: 100%;
-    margin-bottom: 148px;
+    margin-bottom: 142px;
   }
 
   .example__wrapper {
@@ -358,8 +356,8 @@
   }
 
   .example__description {
-    margin-bottom: 65px;
-    padding-right: 20px;
+    margin-bottom: 62px;
+    padding-right: 50px;
   }
 
   .example__info-label {
@@ -371,7 +369,7 @@
   }
 
   .example__info-list {
-    margin-bottom: 52px;
+    margin-bottom: 53px;
   }
 
   .example__price {

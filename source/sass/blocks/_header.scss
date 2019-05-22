@@ -22,7 +22,6 @@
   border-bottom: 1px solid $line-menu-gray;
 }
 
-
 @media (min-width: $tablet-width) {
   .header {
     width: $tablet-width;
@@ -64,10 +63,15 @@
     display: block;
     height: 696px;
     width: 50%;
-    background: $background-color-header url("../img/index-background-desktop@1x.jpg") no-repeat right 0;
+    background: $background-color-header
+      url("../img/index-background-desktop@1x.jpg") no-repeat right 0;
     position: absolute;
     right: 0;
     top: 0;
     z-index: -1;
+  }
+
+  .header--page-main .main-nav__link {
+    letter-spacing: 0;
   }
 }
