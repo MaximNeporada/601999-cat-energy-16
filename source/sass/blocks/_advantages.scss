@@ -3,7 +3,6 @@
   // width: 100%;
   padding: 0 20px;
 
-
   // временные стили
   width: 320px;
   margin: 0 auto;
@@ -47,8 +46,7 @@
 
   flex-shrink: 0;
 
-
-  background-color: $background-button-green;
+  background-color: $background-green;
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto auto;
@@ -56,18 +54,34 @@
 
 .advantages__icon--leaf {
   background-image: url("../img/advantage-leaf@1x.png");
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/advantage-leaf@2x.png");
+  }
 }
 
 .advantages__icon--water {
   background-image: url("../img/advantage-powder@1x.png");
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/advantage-powder@2x.png");
+  }
 }
 
 .advantages__icon--meal {
   background-image: url("../img/advantage-dining@1x.png");
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/advantage-dining@2x.png");
+  }
 }
 
 .advantages__icon--clock {
   background-image: url("../img/advantage-clock@1x.png");
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/advantage-clock@2x.png");
+  }
 }
 
 .advantages__description {

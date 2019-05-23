@@ -11,14 +11,16 @@
   text-align: center;
   text-decoration: none;
 
-  background-color: $background-button-green;
+  background-color: $background-green;
 
   transition: all 0.2s;
+
+  cursor: pointer;
 
   &:hover,
   &:focus,
   &:active {
-    background-color: $background-button-green-light;
+    background-color: $background-button-light;
   }
 
   &:active {

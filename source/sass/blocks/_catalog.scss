@@ -1,13 +1,7 @@
 .catalog {
-  // width: 100%;
   padding-top: 14px;
-
-  // временные стили
   width: 320px;
   margin: 0 auto;
-  // @include outline-front(lightgray);
-  // end
-
   margin-bottom: 6px;
 }
 
@@ -56,11 +50,6 @@
   height: auto;
   max-width: 100%;
   max-height: 100%;
-
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
 }
 
 .catalog__description {
@@ -126,11 +115,12 @@
   margin-bottom: 23px;
 }
 
-.catalog__icon-plus {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
+.catalog__icon-more {
+  fill: #d3d3d3;
+
+  &--tablet {
+    display: none;
+  }
 }
 
 .catalog__item-title--more,
@@ -211,17 +201,12 @@
   }
 
   .catalog__image {
-    display: none;
     max-height: 210px;
     position: absolute;
     left: 50%;
     bottom: 0;
 
     transform: translateX(-50%);
-
-    &--tablet {
-      display: block;
-    }
   }
 
   .catalog__description {
@@ -273,12 +258,19 @@
   }
 
   .catalog__icon-plus {
-    width: auto;
-    height: 60px;
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+      margin-top: 6px;
+    }
   }
 
   .catalog__item-title--more {
@@ -319,16 +311,6 @@
     padding-bottom: 40px;
   }
 
-  .catatlog__image {
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
-  }
-
   .catalog__text-more {
     max-width: 176px;
   }
@@ -337,7 +319,8 @@
     margin-bottom: 37px;
   }
 
-  .catalog__order-link {
+  .catalog__order-link,
+  .catalog__button-more {
     max-width: 170px;
   }
 

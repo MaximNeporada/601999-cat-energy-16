@@ -134,11 +134,6 @@
 .example__image {
   width: 100%;
   height: auto;
-
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
 }
 
 .example__toggle {
@@ -288,14 +283,6 @@
     z-index: 1;
   }
 
-  .example__image {
-    display: none;
-
-    &--tablet {
-      display: block;
-    }
-  }
-
   .example__image-block--before .example__image {
     position: absolute;
     top: 48%;
@@ -377,16 +364,6 @@
     margin: 0;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .example__image {
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
   }
 
   .example__image-block--before {

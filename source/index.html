@@ -10,23 +10,33 @@
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="header header--page-main">
     <div class="header__wrapper">
       <a class="header__logo logo">
-        <img class="logo__image logo__image--mobile" src="img/logo-mobile.svg" alt="Логотип Кэт энерджи">
-        <img class="logo__image logo__image--tablet" src="img/logo-tablet.svg" alt="Логотип Кэт энерджи">
-        <img class="logo__image logo__image--desktop" src="img/logo-desktop.svg" alt="Логотип Кэт энерджи">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="logo__image" src="img/logo-mobile.svg" width="192" height="38"
+            alt="Интернет-магазин питания для котов Cat Energy">
+        </picture>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button" aria-label="Меню">
-          <span>Показать меню</span>
-          <img class="main-nav__toggle-close" src="/img/icon-close.svg" alt="закрыть меню">
+          <svg class="main-nav__toggle-close" width="18" height="18">
+            <title>Скрыть меню</title>
+            <use xlink:href="#icon-close"></use>
+          </svg>
+          <svg class="main-nav__toggle-open" width="24" height="24">
+            <title>Показать меню</title>
+            <use xlink:href="#icon-mobile-menu"></use>
+          </svg>
         </button>
         <ul class="main-nav__list main-nav__list--page-main">
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Главная</a></li>
@@ -47,12 +57,20 @@
         <p class="cat-action__description">Занялся собой? Займись котом!</p>
         <a class="cat-action__link button" href="form.html">Подобрать программу</a>
         <div class="cat-action__image-block">
-          <img class="cat-action__image cat-action__image--mobile" src="img/index-can-mobile@1x.png"
-            alt="Правильное питание!!!">
-          <img class="cat-action__image cat-action__image--tablet" src="img/index-can-tablet@1x.jpg"
-            alt="Правильное питание!!!">
-          <img class="cat-action__image cat-action__image--desktop" src="img/index-can-desktop@1x.png"
-            alt="Правильное питание!!!">
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)"
+              srcset="img/webp/index-can-desktop@1x.webp 1x, img/webp/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/webp/index-can-tablet@1x.webp 1x, img/webp/index-can-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/webp/index-can-mobile@1x.webp 1x, img/webp/index-can-mobile@2x.webp 2x">
+
+            <source srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x"
+              media="(min-width: 1300px)">
+            <source srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <img class="cat-action__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
+              alt="Изображение упаковки с курицей">
+          </picture>
         </div>
       </div>
     </section>
@@ -62,7 +80,10 @@
       <ul class="categories__list">
         <li class="categories__item ">
           <span class="categories__icon">
-            <img class="categories__icon-svg categories__icon-svg--slim" src="img/icon-cat-slim.svg" alt="Худой кот">
+            <svg class="categories__icon-svg categories__icon-svg--slim">
+              <title>Худой кот</title>
+              <use xlink:href="#icon-cat-slim"></use>
+            </svg>
           </span>
           <h3 class="categories__title">Похудение</h3>
           <p class="categories__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
@@ -75,7 +96,10 @@
         </li>
         <li class="categories__item categories__item--pro">
           <span class="categories__icon">
-            <img class="categories__icon-svg categories__icon-svg--pro" src="img/icon-cat-pro.svg" alt="Накаченный кот">
+            <svg class="categories__icon-svg categories__icon-svg--pro">
+              <title>Накаченный кот</title>
+              <use xlink:href="#icon-cat-pro"></use>
+            </svg>
           </span>
           <h3 class="categories__title">Набор Массы</h3>
           </div>
@@ -138,17 +162,32 @@
         <div class="example__wrapper example__wrapper--slider">
           <div class="example__wrapper-images">
             <div class="example__image-block example__image-block--before">
-              <img class="example__image example__image--mobile" src="img/before-mobile@1x.png" alt="Толстый кот">
-              <img class="example__image example__image--tablet" src="img/before-tablet@1x.png" alt="Толстый кот">
-              <img class="example__image example__image--desktop" src="img/before-desktop@1x.png" alt="Толстый кот">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/webp/before-desktop@1x.webp 1x, img/webp/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/webp/before-tablet@1x.webp 1x, img/webp/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/before-mobile@1x.webp 1x, img/webp/before-mobile@2x.webp 2x">
+
+                <source srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width: 1300px)">
+                <source srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" media="(min-width: 768px)">
+                <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2px.png 2x"
+                  alt="Толстый кот">
+              </picture>
             </div>
             <div class="example__image-block example__image-block--after">
-              <img class="example__image example__image--mobile" src="img/after-mobile@1x.png"
-                alt="После правильного питания">
-              <img class="example__image example__image--tablet" src="img/after-tablet@1x.png"
-                alt="После правильного питания">
-              <img class="example__image example__image--desktop" src="img/after-desktop@1x.png"
-                alt="После правильного питания">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/webp/after-desktop@1x.webp 1x, img/webp/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/webp/after-tablet@1x.webp 1x, img/webp/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/after-mobile@1x.webp 1x, img/webp/after-mobile@2x.webp 2x">
+
+                <source srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" media="(min-width: 1300px)">
+                <source srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x" media="(min-width: 768px)">
+                <img class="example__image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2px.png 2x"
+                  alt="После правильного питания">
+              </picture>
             </div>
           </div>
 
@@ -190,29 +229,40 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link " href="https://vk.com/htmlacademy" aria-label="Переход на сайт вконтакте">
-                <img class="social__icon social__icon--mobile" src="img/icon-vk-mobile.svg" alt="Вконтакте" width="22"
-                  height="11">
-                <img class="social__icon social__icon--tablet" src="img/icon-vk.svg" alt="Вконтакте" width="30"
-                  height="16">
-
+                <svg class="social__icon social__icon--mobile" width="22" height="12">
+                  <title>Вконтакте</title>
+                  <use xlink:href="#icon-vk-mobile"></use>
+                </svg>
+                <svg class="social__icon social__icon--tablet" width="30" height="16">
+                  <title>Вконтакте</title>
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link" href="https://www.instagram.com/htmlacademy"
                 aria-label="Переход на сайт instagram">
-                <img class="social__icon social__icon--mobile" src="img/icon-insta-mobile.svg" alt="instagram"
-                  width="16" height="16">
-                <img class="social__icon social__icon--tablet" src="img/icon-insta.svg" alt="instagram" width="23"
-                  height="23">
+                <svg class="social__icon social__icon--mobile" width="16" height="16">
+                  <title>instagram</title>
+                  <use xlink:href="#icon-insta-mobile"></use>
+                </svg>
+                <svg class="social__icon social__icon--tablet" width="23" height="23">
+                  <title>instagram</title>
+                  <use xlink:href="#icon-insta"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link" href="https://www.facebook.com/htmlacademy"
                 aria-label="Переход на сайт facebook">
-                <img class="social__icon social__icon--mobile" src="img/icon-fb-mobile.svg" alt="facebook" width="10"
-                  height="19">
-                <img class="social__icon social__icon--tablet" src="img/icon-fb.svg" alt="facebook" width="14"
-                  height="28">
+                <svg class="social__icon social__icon--mobile" width="10" height="19">
+                  <title>facebook</title>
+                  <use xlink:href="#icon-fb-mobile"></use>
+                </svg>
+                <svg class="social__icon social__icon--tablet" width="14" height="28">
+                  <title>facebook</title>
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -220,12 +270,17 @@
         <div class="footer__copyright copyright">
           <a class="copyright__name" href="https://htmlacademy.ru/intensive/adaptive">
             <span>HTML Academy</span>
-            <img class="copyright__logo" src="img/htmlacademy.svg" alt="Переход на сайт" width="27" height="34">
+            <svg class="copyright__logo" width="27" height="36" role="img">
+              <title>Переход на сайт Htmlacademy</title>
+              <use xlink:href="#htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>
     </div>
   </footer>
 </body>
+<script src="js/picturefill.min.js"></script>
+<script src="js/svg4everybody.min.js"></script>
 
 </html>

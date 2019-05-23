@@ -75,7 +75,7 @@
   }
 
   &:focus ~ .form-program__label {
-    fill: $background-button-green;
+    fill: $background-green;
   }
 
   &:invalid {
@@ -143,11 +143,13 @@
   border-radius: 50%;
   border: 1px solid $line-gray;
 
+  cursor: pointer;
+
   &::before {
     content: "";
     position: absolute;
     display: block;
-    background-color: $background-button-green;
+    background-color: $background-green;
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -208,6 +210,8 @@
 
   border: 1px solid $line-example-gray;
 
+  cursor: pointer;
+
   order: 1;
 
   &:hover {
@@ -234,7 +238,7 @@
   pointer-events: none;
   opacity: 0;
   transition: 0.1s;
-  fill: $background-button-green;
+  fill: $background-green;
   position: absolute;
   top: 8px;
   left: 5px;
