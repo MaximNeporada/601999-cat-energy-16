@@ -10,7 +10,6 @@
   padding-top: 24px;
   padding-bottom: 34px;
 
-  // временные стили
   width: 320px;
   margin: 0 auto;
 }
@@ -39,7 +38,6 @@
 
 .example__wrapper {
   width: 100%;
-  margin-bottom: 34px;
 }
 
 .example__wrapper-info {
@@ -107,33 +105,33 @@
   text-transform: uppercase;
 }
 
-.example__wrapper--slider {
-  margin: 0 -20px;
-  width: calc(100% + 40px);
-}
-
 .example__wrapper-images {
   width: 100%;
-  height: auto;
+  margin: 0;
+  height: 272px;
 }
 
 .example__image-block {
-  width: 100%;
-  height: auto;
-  margin-bottom: 32px;
-}
+  margin-top: 36px;
 
-.example__image-block--before {
-  display: block;
-}
+  &--before {
+    background: url("../img/before-mobile@1x.png") no-repeat left top;
 
-.example__image-block--after {
-  display: none;
-}
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/before-mobile@2x.png");
+      background-size: 320px;
+    }
+  }
 
-.example__image {
-  width: 100%;
-  height: auto;
+  &--after {
+    background: url("../img/after-mobile@1x.png") no-repeat left top;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/after-mobile@2x.png");
+      background-size: 320px;
+    }
+    display: none;
+  }
 }
 
 .example__toggle {
@@ -255,46 +253,38 @@
 
   .example__wrapper-images {
     position: relative;
-    padding: 0 12px;
-    margin-bottom: 16px;
+    width: 100%;
+    height: 530px;
+    margin-left: 56px;
   }
 
   .example__image-block {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 0;
-  }
-
-  .example__image-block--before {
-    position: absolute;
-    top: 0;
-    left: 12px;
-    width: calc(100% - 24px);
-    height: 100%;
-    z-index: 2;
-  }
-
-  .example__image-block--after {
-    width: 100%;
-    height: auto;
-    z-index: 1;
-  }
-
-  .example__image-block--before .example__image {
-    position: absolute;
-    top: 48%;
-    left: 0;
+    margin-top: 0;
+    margin-left: 0;
     width: 50%;
-    height: 100%;
-    z-index: 2;
+    height: 560px;
+    position: absolute;
 
-    transform: translateY(-50%);
+    &--before {
+      background: url("../img/before-tablet@1x.png") no-repeat 15px -4px;
+      left: 0;
 
-    object-fit: cover;
-    object-position: center left;
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/before-tablet@2x.png");
+        background-size: 690px;
+      }
+    }
+
+    &--after {
+      display: block;
+      background: url("../img/after-tablet@1x.png") no-repeat -338px 0;
+      right: 0;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/after-tablet@2x.png");
+        background-size: 690px;
+      }
+    }
   }
 
   .example__toggle {
@@ -335,13 +325,6 @@
     padding-top: 0;
   }
 
-  .example__wrapper-images {
-    margin: 0;
-    margin-bottom: 27px;
-    padding: 0;
-    padding-top: 32px;
-  }
-
   .example__description {
     margin-bottom: 62px;
     padding-right: 50px;
@@ -366,19 +349,32 @@
     justify-content: space-between;
   }
 
-  .example__image-block--before {
-    left: 40px;
-    top: 32px;
-    height: calc(100% - 30px);
-  }
-
-  .example__image-block--after {
+  .example__wrapper-images {
     position: relative;
-    left: 41px;
-    top: -8px;
+    width: 100%;
+    height: 576px;
+    margin-left: 56px;
   }
 
-  .example__image-block--before .example__image {
-    width: 55%;
+  .example__image-block {
+    &--before {
+      background: url("../img/before-desktop@1x.png") no-repeat -15px 23px;
+      width: 344px;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/before-desktop@2x.png");
+        background-size: 690px;
+      }
+    }
+
+    &--after {
+      background: url("../img/after-desktop@1x.png") no-repeat -360px 23px;
+      width: 293px;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/after-desktop@2x.png");
+        background-size: 690px;
+      }
+    }
   }
 }
