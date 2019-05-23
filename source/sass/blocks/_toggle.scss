@@ -32,6 +32,17 @@
 
   background-color: #68b738;
   border-radius: 10px;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3), 0 0 0 2px $background-green;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -71,21 +82,13 @@
       left: calc(50% - 4px);
       top: calc(50% - 4px);
     }
-
-    &:hover {
-      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
-    }
-
-    &:active {
-      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3),
-        0 0 0 2px $background-element-green;
-    }
   }
 
   .toggle__label {
     font-size: 1.56em;
     border-bottom: 1px dotted $line-toggle-gray-2;
     padding: 5px 0 4px;
+    cursor: pointer;
 
     &--after {
       margin-right: 0;

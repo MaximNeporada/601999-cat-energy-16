@@ -69,6 +69,10 @@
     right: 0;
     top: 0;
     z-index: -1;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .header--page-main .main-nav__link {

@@ -24,17 +24,25 @@
   width: 50px;
   height: 50px;
   padding: 16px 14px;
+
+  &:hover .social__icon {
+    fill: $background-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__icon {
   max-width: 100%;
   max-height: 100%;
+  fill: #666666;
 
   &--tablet {
     display: none;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .social__list {

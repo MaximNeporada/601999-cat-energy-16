@@ -3,6 +3,19 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+
+  &[href] {
+    cursor: pointer;
+  }
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
 }
 
 .logo__name {
@@ -12,11 +25,6 @@
 
 .logo__image {
   display: block;
-
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -24,31 +32,11 @@
     width: 173px;
     height: auto;
   }
-
-  .logo__image {
-    display: none;
-
-    &--tablet {
-      display: block;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
   .logo {
     width: 202px;
     height: auto;
-  }
-
-  .logo__image {
-    display: none;
-
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
   }
 }

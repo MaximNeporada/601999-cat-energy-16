@@ -81,6 +81,10 @@
   background: $background-element-green url("../img/gift-photo-mobile@1x.jpg")
     no-repeat;
   background-size: 100%;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .additional__text {
@@ -170,6 +174,10 @@
     height: 200px;
 
     background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   .additional__action-icon {
@@ -261,6 +269,10 @@
     padding: 0 91px;
 
     background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
   .additional__action-icon {

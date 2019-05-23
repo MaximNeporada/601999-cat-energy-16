@@ -4,7 +4,6 @@
   padding: 0 20px;
   padding-top: 30px;
 
-
   // временные стили
   width: 320px;
   margin: 0 auto;
@@ -35,8 +34,11 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: top center;
-}
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+}
 
 .cat-action__title {
   width: 100%;
@@ -74,11 +76,6 @@
   display: block;
   width: 100%;
   height: auto;
-
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
 }
 
 .cat-action__link {
@@ -143,14 +140,6 @@
     margin-top: -80px;
     width: calc(100% + 180px);
   }
-
-  .cat-action__image {
-    display: none;
-
-    &--tablet {
-      display: block;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -178,14 +167,5 @@
     top: 0;
     left: 50%;
     transform: translateX(-158px);
-  }
-
-  .cat-action__image {
-    display: block;
-
-    &--tablet,
-    &--mobile {
-      display: none;
-    }
   }
 }
