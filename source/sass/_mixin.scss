@@ -14,9 +14,3 @@
   border: 0;
   padding: 0;
 }
-
-// временный
-@mixin outline-front($color) {
-  outline: 2px dashed $color;
-  outline-offset: 2px;
-}

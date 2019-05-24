@@ -1,15 +1,9 @@
 .cat-action {
   position: relative;
-  // width: 100%;
   padding: 0 20px;
   padding-top: 30px;
-
-  // временные стили
   width: 320px;
   margin: 0 auto;
-  // @include outline-front(green);
-  // end
-
   margin-bottom: 22px;
 }
 
@@ -105,7 +99,7 @@
     order: 0;
 
     width: auto;
-    // может быть применимо ко всем
+
     padding: 15px 26px;
     padding-right: 28px;
     padding-top: 17px;

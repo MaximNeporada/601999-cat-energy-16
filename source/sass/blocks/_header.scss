@@ -1,13 +1,9 @@
 .header {
-  // width: 100%;
   min-height: 66px;
   display: flex;
   flex-direction: column;
-
-  // временные стили
   width: 320px;
   margin: 0 auto;
-  // @include outline-front(yellow);
 }
 
 .header__wrapper {
