@@ -1,5 +1,4 @@
 .contacts {
-  background-color: $background-lightgray;
   width: 100%;
 }
 
@@ -11,6 +10,8 @@
   padding-bottom: 26px;
   margin: auto;
   width: 320px;
+
+  background: $background-white;
 }
 
 .contacts__label {
@@ -58,15 +59,15 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    width: $tablet-width;
+    width: 100%;
     margin: 0 auto;
   }
 
   .contacts__wrapper-text {
     padding: 65px 72px;
     padding-bottom: 56px;
-    margin: 0;
-    width: 100%;
+    margin: 0 auto;
+    width: $tablet-width;
   }
 
   .contacts__label {
@@ -114,7 +115,6 @@
 
   .contacts__wrapper-text {
     position: absolute;
-    background: $background-white;
     top: 95px;
     left: 110px;
     padding: 63px 76px;

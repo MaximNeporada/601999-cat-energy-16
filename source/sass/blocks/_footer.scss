@@ -1,14 +1,13 @@
 .footer {
   width: 100%;
-  max-width: 320px;
   margin: 0 auto;
+  background-color: $background-lightgray;
 }
 
 .footer__container {
   width: 100%;
+  max-width: 320px;
   margin: 0 auto;
-
-  background-color: $background-lightgray;
 }
 
 .footer__wrapper {
@@ -39,7 +38,12 @@
 
 @media (min-width: $tablet-width) {
   .footer {
+    background-color: $background-white;
+  }
+
+  .footer__container {
     max-width: none;
+    background-color: $background-lightgray;
   }
 
   .footer__wrapper {

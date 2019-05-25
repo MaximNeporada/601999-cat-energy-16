@@ -22,6 +22,22 @@
   navToggleOpen.addEventListener("click", menuToggle);
   navToggleClose.addEventListener("click", menuToggle);
 
+  // orderButton
+  var orderButton = document.querySelectorAll(".catalog__order-link");
+  var additionalOrderButton = document.querySelectorAll(".additional__order");
+
+  var eventorderPopup = function(arr) {
+    arr.forEach(function(val, i) {
+      val.addEventListener("click", function(e) {
+        e.preventDefault();
+        alert("popup ready");
+      });
+    });
+  };
+
+  eventorderPopup(additionalOrderButton);
+  eventorderPopup(orderButton);
+
   // Yandex map
   var getMapConfig = function() {
     if (window.screen >= 1300) {
